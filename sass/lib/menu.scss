@@ -1,0 +1,182 @@
+#nav-bar{
+
+	background-color:#273c75;
+    
+
+	.menu{
+
+		>ul{
+
+			list-style:none;
+
+			>li{
+
+				float: left;
+                position: relative;
+
+                svg{
+
+                	transition:250ms all;
+                }
+
+                &:hover >a>svg{
+
+                   transform:rotate(180deg);
+                }
+
+                &:hover > ul{
+
+                    opacity:1;
+                    visibility:visible;
+
+                }
+
+
+
+				
+				
+				>a{
+
+                    font-family:$mainFont;
+				    font-weight:bold;
+				    color:#fff;
+				    text-transform:uppercase;
+				    padding:0 15px;
+				    line-height:55px;
+				    text-decoration: none;
+				    transition: 250ms all;
+				    font-size:15px;
+                    display: block;
+
+
+				    >span{
+
+                      color:#fbc531;
+                      display: block;
+
+				    }
+
+				    &:hover{
+
+				    	color:#fbc531;
+				    }
+				}
+
+				>ul{
+
+					list-style:none;
+					background:#ffffff;
+					position: absolute;
+                    width:230px;
+                    left:0;
+                    top:55px;
+                    transition: 250ms all;
+                    opacity: 0;
+                    visibility: hidden;
+
+
+					>li{ 
+
+						padding:15px 12px;
+                        border-bottom:1px solid #d2dae2;
+                        
+
+                       &:hover  ul{
+
+                                opacity:1;
+                                visibility:visible;
+							}
+                             
+
+                      >svg{
+
+                      	opacity:0;
+                      	margin-left:5px;
+                      }
+
+
+						>a{
+
+							color:#fff;
+							text-decoration: none;
+							font-weight: bold;
+							font-family:$mainFont;
+							font-size:15px;
+                            color:#1e272e;
+                            transition: 250ms all;
+						}
+
+
+						  &:hover > a{
+
+	                           margin-left:8px;
+	                           color:#EAB543;
+                          }
+
+
+                          &:hover > svg{
+
+	                           opacity:1;
+	                           color:#EAB543;
+                        }
+
+
+					>ul{
+
+						
+						width:230px;
+						background:#ffffff;
+						height:56px;
+						position: absolute;
+						left:233px;
+						bottom:0;
+						right:0;
+						list-style:none;
+						opacity:0;
+						visibility: hidden;
+                        transition: 250ms all;  
+
+						>li{
+
+							padding:15px 12px;
+
+
+							
+                            
+                            >svg{
+
+                            	opacity:0;
+                            }
+
+							&:hover >a{
+                              margin-left:8px;
+                              color:#EAB543;
+							}
+
+							&:hover >svg{
+                                                           
+                                  opacity:1;
+                                  color:#EAB543;
+
+							}
+
+							>a{
+
+								text-decoration: none;
+								color:#1e272e;
+								font-family: $mainFont;
+								font-weight:bold;
+								transition: 250ms all;
+
+							}
+						}
+					}
+
+                       
+					}
+
+				}
+			}
+		}
+	}
+}

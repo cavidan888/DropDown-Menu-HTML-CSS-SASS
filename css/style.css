@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background: #fa983a;
+}
+
+.active {
+  color: #fbc531;
+}
+
+#nav-bar {
+  background-color: #273c75;
+}
+#nav-bar .menu > ul {
+  list-style: none;
+}
+#nav-bar .menu > ul > li {
+  float: left;
+  position: relative;
+}
+#nav-bar .menu > ul > li svg {
+  transition: 250ms all;
+}
+#nav-bar .menu > ul > li:hover > a > svg {
+  transform: rotate(180deg);
+}
+#nav-bar .menu > ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+#nav-bar .menu > ul > li > a {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0 15px;
+  line-height: 55px;
+  text-decoration: none;
+  transition: 250ms all;
+  font-size: 15px;
+  display: block;
+}
+#nav-bar .menu > ul > li > a > span {
+  color: #fbc531;
+  display: block;
+}
+#nav-bar .menu > ul > li > a:hover {
+  color: #fbc531;
+}
+#nav-bar .menu > ul > li > ul {
+  list-style: none;
+  background: #ffffff;
+  position: absolute;
+  width: 230px;
+  left: 0;
+  top: 55px;
+  transition: 250ms all;
+  opacity: 0;
+  visibility: hidden;
+}
+#nav-bar .menu > ul > li > ul > li {
+  padding: 15px 12px;
+  border-bottom: 1px solid #d2dae2;
+}
+#nav-bar .menu > ul > li > ul > li:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+#nav-bar .menu > ul > li > ul > li > svg {
+  opacity: 0;
+  margin-left: 5px;
+}
+#nav-bar .menu > ul > li > ul > li > a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  color: #1e272e;
+  transition: 250ms all;
+}
+#nav-bar .menu > ul > li > ul > li:hover > a {
+  margin-left: 8px;
+  color: #EAB543;
+}
+#nav-bar .menu > ul > li > ul > li:hover > svg {
+  opacity: 1;
+  color: #EAB543;
+}
+#nav-bar .menu > ul > li > ul > li > ul {
+  width: 230px;
+  background: #ffffff;
+  height: 56px;
+  position: absolute;
+  left: 233px;
+  bottom: 0;
+  right: 0;
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: 250ms all;
+}
+#nav-bar .menu > ul > li > ul > li > ul > li {
+  padding: 15px 12px;
+}
+#nav-bar .menu > ul > li > ul > li > ul > li > svg {
+  opacity: 0;
+}
+#nav-bar .menu > ul > li > ul > li > ul > li:hover > a {
+  margin-left: 8px;
+  color: #EAB543;
+}
+#nav-bar .menu > ul > li > ul > li > ul > li:hover > svg {
+  opacity: 1;
+  color: #EAB543;
+}
+#nav-bar .menu > ul > li > ul > li > ul > li > a {
+  text-decoration: none;
+  color: #1e272e;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  transition: 250ms all;
+}
+
+/*# sourceMappingURL=style.css.map */

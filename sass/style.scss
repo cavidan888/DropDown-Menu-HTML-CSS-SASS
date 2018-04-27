@@ -1,0 +1,23 @@
+$mainFont:'Lato', sans-serif;
+
+*{
+	
+	margin:0;
+	padding:0;
+	border:0;
+	font-family:'Lato', sans-serif;
+	
+	
+}
+
+body{
+	
+	background:#fa983a;
+}
+
+.active{
+	
+	color:#fbc531;
+}
+
+@import "lib/menu"
